@@ -1,0 +1,69 @@
+@use 'variable';
+
+.hero{
+    background-image:url(../images/hero/heroBackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+
+    .container{
+        position: relative;
+        text-align: center;
+    }
+
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: variable.$backgroundColor;
+        opacity: .8;
+    }
+
+    &__content{
+        padding-top: 250px;
+        font-size: 40px;
+        margin-bottom: 32px;
+        
+        @media (max-width: 640px){
+            font-size: 28px;
+        }
+    }
+
+    &__important{
+        
+        &__title{
+        margin-top: 40px;
+        font-size: 32px;
+        text-transform: uppercase;
+        }
+
+        &__content{
+            font-size: 24px;
+            color: variable.$secundaryText;
+        }
+    }
+
+    @media (max-width: 640px){
+        background-size: contain ;
+        background-color: black;
+
+        &__content{
+            padding-top: 150px;
+            font-size: 24px;
+        }
+
+        &__important{
+            font-size: 20px;
+    
+            &__content{
+                font-size: 16px;
+            }
+        }
+            
+    }
+}

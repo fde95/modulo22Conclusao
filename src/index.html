@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;400;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./styles/main.scss">
+    <title>Felipe's Birthday</title>
+</head>
+<body>
+
+    <header class="hero">
+        <div class="container" data-aos="fade-down">
+            <div class="hero__content">
+                <h1>Felipe's Birthday</h1>
+                <span id="contador"></span>
+            </div>
+
+            <audio id="player" autoplay="loop">
+                <source src="./audio/Picco_Hesitate.mp3" type="audio/mp3" />
+                seu navegador não suporta HTML5
+            </audio>
+
+            <div class="hero__important">
+            <h2 class="hero__important__title">informação importante!</h2>
+            <p class="hero__important__content">
+                Sem presente para o aniversáriante, não entra!
+            </p>
+        </div>
+    </header>
+
+    <section class="event">
+        <div class="container"  data-aos="fade-up">
+            <div class="event__details">
+                <h2 class="event__details__title">Local do Evento</h2>
+                <p class="event__details__description">
+                    Venha comemorar em grande estilo!  🎉🎂<br>
+                    Você está convidado(a) para uma noite repleta de diversão, risadas e muitas surpresas.
+                    Prepare-se para uma festa cheia de música, dança e deliciosas comidas e bebidas. Não perca a oportunidade de compartilhar esse momento especial com amigos, familiares e muita animação.
+                    <br><br>
+                    Endereço fictício: Rua das Estrelas, nº 123, Bairro Alegria, Cidade Festiva
+                    </p>
+            </div>
+            <img class="event__image" src="./images/local/partyHouse.jpg" alt="Local" >
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>

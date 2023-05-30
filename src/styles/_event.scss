@@ -1,0 +1,49 @@
+@use 'variable';
+
+.event{
+    padding: 80px 0;
+    width: 100vw;
+    height: 50vh;
+    background-color: black;
+    .container{
+        display: flex;
+        gap: 40px;
+    }
+
+    &__details{
+        
+        &__title{
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+
+        &__description{
+            line-height: 22px;
+        }
+    }
+
+    &__image{
+        max-width: 360px;
+        height: 100%;
+        border-radius: 8px;
+    }
+
+    
+    @media (max-width: 640px){
+        .container{
+            display: block;
+        }
+
+        &__details{
+            margin-right: 0px;
+            margin-bottom: 16px;
+        }
+
+        &__image{
+            width: 100%;
+        }
+
+    }
+}
